@@ -44,7 +44,7 @@ def monitor():
             temp = get_temperature()
             print("Temp:", temp)
 
-            if temp > 20:
+            if temp > 0:
                 send_email(temp)
                 time.sleep(300)
             else:
